@@ -1,0 +1,27 @@
+g++ iHiC_base.cpp -c
+g++ iHiC_rgn.cpp -c
+
+g++ iHiC_BEDPE2HiCSummary.cpp -c
+g++ iHiC_BEDPE2III.cpp -c
+g++ iHiC_BEDPE_Statistics.cpp -c
+g++ iHiC_ContactFreq_Distance.cpp -c
+g++ iHiC_Cscore_Adj.cpp -c
+g++ iHiC_FitHiC2WashU.cpp -c
+g++ iHiC_III2FitHiCInputs.cpp -c
+g++ iHiC_III2TopDomInputs.cpp -c
+g++ iHiC_PETOrientations_Stat.cpp -c
+g++ iHiC_TADBoundary_TopDom.cpp -c
+g++ iHiC_III2WashU.cpp -c
+
+g++ iHiC_rgn.o iHiC_BEDPE2HiCSummary.o iHiC_base.o -O2 -o bin/iHiC_BEDPE2HiCSummary
+g++ iHiC_rgn.o iHiC_BEDPE2III.o iHiC_base.o -O2 -o bin/iHiC_BEDPE2III
+g++ iHiC_rgn.o iHiC_BEDPE_Statistics.o iHiC_base.o -O2 -o bin/iHiC_BEDPE_Statistics
+g++ iHiC_rgn.o iHiC_ContactFreq_Distance.o iHiC_base.o -O2 -o bin/iHiC_ContactFreq_Distance
+g++ iHiC_rgn.o iHiC_Cscore_Adj.o iHiC_base.o -O2 -o bin/iHiC_Cscore_Adj
+g++ iHiC_rgn.o iHiC_FitHiC2WashU.o iHiC_base.o -O2 -o bin/iHiC_FitHiC2WashU
+g++ iHiC_rgn.o iHiC_III2FitHiCInputs.o iHiC_base.o -O2 -o bin/iHiC_III2FitHiCInputs
+g++ iHiC_rgn.o iHiC_III2TopDomInputs.o iHiC_base.o -O2 -o bin/iHiC_III2TopDomInputs
+g++ iHiC_rgn.o iHiC_PETOrientations_Stat.o iHiC_base.o -O2 -o bin/iHiC_PETOrientations_Stat
+g++ iHiC_rgn.o iHiC_TADBoundary_TopDom.o iHiC_base.o -O2 -o bin/iHiC_TADBoundary_TopDom
+g++ iHiC_rgn.o iHiC_III2WashU.o iHiC_base.o -O2 -o bin/iHiC_III2WashU
+
