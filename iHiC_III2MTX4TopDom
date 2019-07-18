@@ -3,7 +3,7 @@ using namespace std;
 
 int main(int argc, char* args[]) {
 	if( argc != 5 ){
-		cout<<"Usage: iHiC_III2TopDomInputs III_file Bin_size Chr_Lenth Output_prefix\n";
+		cout<<"Usage: iHiC_III2MTX4TopDom III_file Bin_size Chr_Lenth Output_prefix\n";
 		exit(1);
 	}
 	int bin = atoi(args[2]);
