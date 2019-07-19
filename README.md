@@ -5,11 +5,9 @@ Descriptions of the utilities
 
 1. <b>iHiC_BEDPE_Statistics</b>: Calculate statistics of PET alignments from a simplified BEDPE file.<br>
   <b>Inputs</b>:<br>
-  <em></em><br>
-  <em></em><br>
-  <em></em><br>
-  <b>Outputs</b>:<br>
-  <b>Note</b>:<br>
+  <em>BEDPE_file</em>: a simplified version of regular BEDPE file: only columns for “chrom1”, “start1”, “end1”, “chrom2”, “start2”, “end2”, “score”, “strand1”, and “strand 2” are retained.<br>
+  <em>MAPQ</em>: minimal mapping quality score used to filter out PETs mapped to multiple positions. 10 recommended.<br>
+  <b>Outputs</b>: screen<br>
 2. iHiC_PETOrientations_Stat: Calculate % of PETs in different combinations of orientations as a function of genomic distance.
   <b>Inputs</b>:<br>
   <em></em><br>
