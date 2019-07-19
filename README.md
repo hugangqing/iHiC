@@ -66,10 +66,10 @@ Descriptions of usage of the utilities
   <b>Outputs</b>: In the format of n X (n+3) matrix format, accepted by [TopDom](https://github.com/HenrikBengtsson/TopDom) as [input](https://github.com/HenrikBengtsson/TopDom/blob/0.0.2/docs/TopDom%20Manual_v0.0.2.pdf), with first three columns for bin.chr, bin.start, and bin.end, and the next n columns for # of PETs linked to other bins.<br>
   
 9. <b>iHiC_TADBoundary_TopDom</b>: Extract TAD boundaries from [TopDom](https://github.com/HenrikBengtsson/TopDom) predictions.<br>
-  <b>Usage</b>:iHiC_TADBoundary_TopDom TopDom_binSignal_file Qvalue_threshold Output_file_name<br>
+  <b>Usage</b>:iHiC_TADBoundary_TopDom TopDom_binSignal_file Pvalue_threshold Output_file_name<br>
   <b>Inputs</b>:<br>
   <em>TopDom_binSignal_file</em>: Output file from [TopDom](https://github.com/HenrikBengtsson/TopDom) with name ending with '.binSignal'.<br>
-  <em>Qvalue_threshold</em>: qvalue used to filter bins corresponding to TAD boundaries.<br>
+  <em>Pvalue_threshold</em>: Pvalue used to filter bins corresponding to TAD boundaries.<br>
   <em>Output_file_name</em>: File name for the file of TAD boundaries.<br>
   <b>Outputs</b>:In bedgraph format.<br>
   
