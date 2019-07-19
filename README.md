@@ -85,9 +85,10 @@ Descriptions of usage of the utilities
   <b>Outputs</b>: "chr#.frag" and "chr#.cnts" for "fragments file" and "interactions file" accepted by [Fit-Hi-C](https://github.com/ay-lab/fithic) <br>
   
 11. <b>iHiC_FitHiC2WashU</b>: Convert the significant contacts predicted by Fit-Hi-C into a “longrange” format accepted by the [WashU Epigenome Browser](https://epigenomegateway.wustl.edu).<br>
+  <b>Usage</b>: iHiC_FitHiC2WashU FitHiC_prediction Bin_size Q-value<br>
   <b>Inputs</b>:<br>
-  <em></em><br>
-  <em></em><br>
-  <em></em><br>
-  <b>Outputs</b>:<br>
+  <em>FitHiC_prediction</em>: Output file Fit-Hi-C with name ending with '.significances.txt'.<br>
+  <em>Bin_szie</em>: Bin size used for generating inputs for Fit-Hi-C by iHiC_III2FitHiCInputs<br>
+  <em>Q-value</em>: Q-value to retain significant contacts.<br>
+  <b>Outputs</b>: Output file will be ending with ["longrange"](http://wiki.wubrowse.org/Long-range) accepted by [WashU Epigenome Browser](https://epigenomegateway.wustl.edu) for data visualization. <br>
   <b>Note</b>:<br>
