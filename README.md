@@ -91,4 +91,3 @@ Descriptions of usage of the utilities
   <em>Bin_szie</em>: Bin size used for generating inputs for Fit-Hi-C by iHiC_III2FitHiCInputs<br>
   <em>Q-value</em>: Q-value to retain significant contacts.<br>
   <b>Outputs</b>: Output file will be ending with ["longrange"](http://wiki.wubrowse.org/Long-range) accepted by [WashU Epigenome Browser](https://epigenomegateway.wustl.edu) for data visualization. <br>
-  <b>Note</b>:<br>
