@@ -1,5 +1,5 @@
 # iHiC
-A set of C++ utilities for pre/post-processing Hi-C data for public software and for data visualization in the WashU Epigenome Browser.
+A set of C++ utilities for pre/post-processing Hi-C data for public software (including [CscoreTool](https://github.com/scoutzxb/CscoreTool) for A/B compartment, [TopDom](https://github.com/HenrikBengtsson/TopDom) for TAD, and [Fit-Hi-C](https://github.com/ay-lab/fithic) for significant contacts) and for data visualization in the [WashU Epigenome Browser](https://epigenomegateway.wustl.edu).
 
 Descriptions of usage of the utilities
 
@@ -42,7 +42,7 @@ Descriptions of usage of the utilities
   <em>Bin_size</em>: Size of genomic bin.<br>
   <em>Output_file_name</em>: File name for the "longrange" file.<br>
   <b>Outputs</b>: A ["longrange"](http://wiki.wubrowse.org/Long-range) format by WashU Epigenome Browser.<br>
-6. <b>iHiC_BEDPE2HiCSummary</b>: Convert a BEDPE file into [“HiCsummary”](http://homer.ucsd.edu/homer/interactions/HiCtagDirectory.html) format accepted by CscoreTool.<br>
+6. <b>iHiC_BEDPE2HiCSummary</b>: Convert a BEDPE file into [“HiCsummary”](http://homer.ucsd.edu/homer/interactions/HiCtagDirectory.html) format accepted by [CscoreTool](https://github.com/scoutzxb/CscoreTool).<br>
   <b>Usage</b>:iHiC_BEDPE2HiCSummary BEDPE Output_file_name<br>
   <b>Inputs</b>:<br>
   <em>BEDPE_file</em>: A simplified version of regular BEDPE file: only columns for “chrom1”, “start1”, “end1”, “chrom2”, “start2”, “end2”, “score”, “strand1”, and “strand 2” are retained.<br>
@@ -56,30 +56,33 @@ Descriptions of usage of the utilities
   <em>CpG_annotation_file</em>: CpG annotation downloaded from UCSC. Only the 4-5 columns corresponding to chr, start and end are used by the program. <br>
   <b>Outputs</b>: A "bedgraph" format with file name ending with "adj"<br>
 
-8. <b>iHiC_III2MTX4TopDom</b>: Convert an III file into interaction matrices accepted by TopDom.<br>
+8. <b>iHiC_III2MTX4TopDom</b>: Convert an III file into interaction matrices accepted by [TopDom](https://github.com/HenrikBengtsson/TopDom).<br>
   <b>Usage</b>:iHiC_III2MTX4TopDom III_file Bin_size Chr_lenth_file Output_Prefix<br>
   <b>Inputs</b>:<br>
   <em>III_file</em>: An intra-chromosomal interaction index (III) file that records the numbers of PETs for interacting genomic bins from the same chromosomes. Output from iHiC_BEDPE2III.<br>
   <em>Bin_size</em>: Size of genomic bin.<br>
   <em>Chr_lenth_file</em>: In a two column format: chr and length<br>
   <em>Output_Prefix</em>: "chr#.mtx4topdom" will be appended to the Output_Prefix to denote the file for chr#.<br>
-  <b>Outputs</b>: In the format of n X (n+3) matrix format, accepted by TopDom as [input](https://github.com/HenrikBengtsson/TopDom/blob/0.0.2/docs/TopDom%20Manual_v0.0.2.pdf), with first three columns for bin.chr, bin.start, and bin.end, and the next n columns for # of PETs linked to other bins.<br>
+  <b>Outputs</b>: In the format of n X (n+3) matrix format, accepted by [TopDom](https://github.com/HenrikBengtsson/TopDom) as [input](https://github.com/HenrikBengtsson/TopDom/blob/0.0.2/docs/TopDom%20Manual_v0.0.2.pdf), with first three columns for bin.chr, bin.start, and bin.end, and the next n columns for # of PETs linked to other bins.<br>
   
-9. <b>iHiC_TADBoundary_TopDom</b>: Extract TAD boundaries from TopDom predictions.<br>
+9. <b>iHiC_TADBoundary_TopDom</b>: Extract TAD boundaries from [TopDom](https://github.com/HenrikBengtsson/TopDom) predictions.<br>
   <b>Usage</b>:iHiC_TADBoundary_TopDom TopDom_binSignal_file Qvalue_threshold Output_file_name<br>
   <b>Inputs</b>:<br>
-  <em>TopDom_binSignal_file</em>: Output file from TopDom with name ending with '.binSignal'.<br>
+  <em>TopDom_binSignal_file</em>: Output file from [TopDom](https://github.com/HenrikBengtsson/TopDom) with name ending with '.binSignal'.<br>
   <em>Qvalue_threshold</em>: qvalue used to filter bins corresponding to TAD boundaries.<br>
   <em>Output_file_name</em>: File name for the file of TAD boundaries.<br>
   <b>Outputs</b>:In bedgraph format.<br>
   
-10. <b>iHiC_III2FitHiCInputs</b>: Convert an III file into interaction matrices accepted by Fit-Hi-C.<br>
-  <b>Inputs</b>:<br>
-  <em></em><br>
-  <em></em><br>
-  <em></em><br>
-  <b>Outputs</b>:<br>
-  <b>Note</b>:<br>
+10. <b>iHiC_III2FitHiCInputs</b>: Convert an III file into interaction matrices accepted by [Fit-Hi-C](https://github.com/ay-lab/fithic).<br>
+  <b>Usage</b>: iHiC_III2FitHiCInputs III Output_prefix Chr_length_file Bin_size Minimal_Distance Maximal_Distance<br>
+  <b>Inputs</b>: <br>
+  <em>III_file</em>: An intra-chromosomal interaction index (III) file that records the numbers of PETs for interacting genomic bins from the same chromosomes. Output from iHiC_BEDPE2III.<br>
+  <em>Output_Prefix</em>: "chr#.frag" and "chr#.cnts" will be appended to the Output_Prefix to denote the files for chr#.<br>
+  <em>Chr_lenth_file</em>: In a two column format: chr and length<br>
+  <em>Bin_size</em>: Size of genomic bin.<br>
+  <em>Minimal_Distance</em>: Minimal distance between two PET ends considered.<br>
+  <em>Maximal_Distance</em>: Maximal distance between two PET ends considered<br>
+  <b>Outputs</b>: "chr#.frag" and "chr#.cnts" for "fragments file" and "interactions file" accepted by [Fit-Hi-C](https://github.com/ay-lab/fithic) <br>
   
 11. <b>iHiC_FitHiC2WashU</b>: Convert the significant contacts predicted by Fit-Hi-C into a “longrange” format accepted by the WashU browser.<br>
   <b>Inputs</b>:<br>
