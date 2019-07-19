@@ -1,10 +1,10 @@
 # iHiC
 A set of C++ utilities for pre/post-processing Hi-C data for public software and for data visualization in the WashU Epigenome Browser.
 
-Descriptions of the utilities
+Descriptions of usage of the utilities
 
 1. <b>iHiC_BEDPE_Statistics</b>: Calculate statistics of PET alignments from a simplified BEDPE file.<br>
-  <b>Usage</b>:iHiC_BEDPE_Statistics BEDPE_file MAPQ<br>
+  <b>Usage</b>: iHiC_BEDPE_Statistics BEDPE_file MAPQ<br>
   <b>Inputs</b>:<br>
   <em>BEDPE_file</em>: a simplified version of regular BEDPE file: only columns for “chrom1”, “start1”, “end1”, “chrom2”, “start2”, “end2”, “score”, “strand1”, and “strand 2” are retained.<br>
   <em>MAPQ</em>: minimal mapping quality score used to filter out PETs mapped to multiple positions. 10 recommended.<br>
@@ -19,7 +19,7 @@ Descriptions of the utilities
   <em>BEDPE_file</em>: a simplified version of regular BEDPE file: only columns for “chrom1”, “start1”, “end1”, “chrom2”, “start2”, “end2”, “score”, “strand1”, and “strand 2” are retained.<br>
   <em>MAPQ</em>: minimal mapping quality score used to filter out PETs mapped to multiple positions. 10 recommended.<br>
   <b>Outputs</b>: screen<br>
-  <b>Note</b>:It is recommended to redirect the ouputs into a local file with the ">" symbol: iHiC_ContactFreq_Distance BEDPE_file MAPQ > local_file_name <br>
+  <b>Note</b>: It is recommended to redirect the ouputs into a local file with the ">" symbol: iHiC_ContactFreq_Distance BEDPE_file MAPQ > local_file_name <br>
 4. <b>iHiC_BEDPE2III</b>: Generate an intra-chromosomal interaction index (III) file that records the numbers of PETs for interacting genomic bins from the same chromosomes.<br>
 <b>Usage</b>: iHiC_BEDPE2III BEDPE_file Bin_size Minimal_Distance Maximal_Distance MAPQ Output_file<br>
 <b>Inputs</b>:<br>
@@ -32,7 +32,6 @@ Descriptions of the utilities
 <b>Output file</b>:<br>
   Format for left to right columns: chromosome, genomic position of bin1, genomic position of bin2, number of PETs linking the two bins.<br>
   <b>Note</b>: only uniquely mapped PETs are considered. For multiple PETs mapped to the same position, only one copy is retained.<br>
-
 5. iHiC_III2WashU: Convert an III file into “longrange” format (http://wiki.wubrowse.org/Long-range) accepted by the WashU browser.<br>
   <b>Inputs</b>:<br>
   <em></em><br>
