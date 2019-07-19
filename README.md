@@ -35,13 +35,13 @@ Descriptions of usage of the utilities
 <b>Outputs</b>: Format for left to right columns: chromosome, genomic position of bin1, genomic position of bin2, number of PETs linking the two bins.<br>
   <b>Note</b>: Only uniquely mapped PETs are considered. For multiple PETs mapped to the same position, only one copy is retained.<br>
 
-5. <b>iHiC_III2WashU</b>: Convert an III file into [“longrange”](http://wiki.wubrowse.org/Long-range) format accepted by the WashU browser.<br>
+5. <b>iHiC_III2WashU</b>: Convert an III file into [“longrange”](http://wiki.wubrowse.org/Long-range) format accepted by the [WashU Epigenome Browser](https://epigenomegateway.wustl.edu).<br>
   <b>Usage</b>: iHiC_III2WashU III_file Bin_size Output_file_name<br>
   <b>Inputs</b>:<br>
   <em>III_file</em>: An intra-chromosomal interaction index (III) file that records the numbers of PETs for interacting genomic bins from the same chromosomes. Output from iHiC_BEDPE2III.<br>
   <em>Bin_size</em>: Size of genomic bin.<br>
   <em>Output_file_name</em>: File name for the "longrange" file.<br>
-  <b>Outputs</b>: A ["longrange"](http://wiki.wubrowse.org/Long-range) format by WashU Epigenome Browser.<br>
+  <b>Outputs</b>: A ["longrange"](http://wiki.wubrowse.org/Long-range) format by [WashU Epigenome Browser](https://epigenomegateway.wustl.edu).<br>
 6. <b>iHiC_BEDPE2HiCSummary</b>: Convert a BEDPE file into [“HiCsummary”](http://homer.ucsd.edu/homer/interactions/HiCtagDirectory.html) format accepted by [CscoreTool](https://github.com/scoutzxb/CscoreTool).<br>
   <b>Usage</b>:iHiC_BEDPE2HiCSummary BEDPE Output_file_name<br>
   <b>Inputs</b>:<br>
@@ -84,7 +84,7 @@ Descriptions of usage of the utilities
   <em>Maximal_Distance</em>: Maximal distance between two PET ends considered<br>
   <b>Outputs</b>: "chr#.frag" and "chr#.cnts" for "fragments file" and "interactions file" accepted by [Fit-Hi-C](https://github.com/ay-lab/fithic) <br>
   
-11. <b>iHiC_FitHiC2WashU</b>: Convert the significant contacts predicted by Fit-Hi-C into a “longrange” format accepted by the WashU browser.<br>
+11. <b>iHiC_FitHiC2WashU</b>: Convert the significant contacts predicted by Fit-Hi-C into a “longrange” format accepted by the [WashU Epigenome Browser](https://epigenomegateway.wustl.edu).<br>
   <b>Inputs</b>:<br>
   <em></em><br>
   <em></em><br>
