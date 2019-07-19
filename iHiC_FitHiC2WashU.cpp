@@ -4,8 +4,9 @@ using namespace std;
 int main(int argc, char* args[]) {
 	if( argc != 4 ){
 		cout<<"Usage: iHiC_FitHiC2WashU FitHiC_prediction Bin_size Q-value\n";
-		cout<<"FitHiC_prediction: Output file Fit-Hi-C with name ending with '.significances.txt'\n";
-		cout<<"Bin_size: Bin size used for generating inputs for Fit-Hi-C by iHiC_III2FitHiCInputs'\n";
+		cout<<"FitHiC_prediction: Output file Fit-Hi-C with name ending with '.significances.txt'.\n";
+		cout<<"Bin_size: Bin size used for generating inputs for Fit-Hi-C by iHiC_III2FitHiCInputs.\n";
+		cout<<"Q-value: Q-value for significant contact retained for WashU visualization.\n";
 		exit(1);
 	}
 
