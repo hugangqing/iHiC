@@ -1,5 +1,5 @@
 # iHiC
-A set of C++ utilities for pre/post-processing Hi-C data for public software (including [CscoreTool](https://github.com/scoutzxb/CscoreTool) for A/B compartment, [TopDom](https://github.com/HenrikBengtsson/TopDom) for TAD, and [Fit-Hi-C](https://github.com/ay-lab/fithic) for significant contacts) and for data visualization in the [WashU Epigenome Browser](https://epigenomegateway.wustl.edu).
+A set of C++ utilities for pre/post-processing Hi-C data for public software (including [CscoreTool](https://github.com/scoutzxb/CscoreTool) for A/B compartment, [TopDom](https://github.com/HenrikBengtsson/TopDom) for TAD, and [Fit-Hi-C](https://github.com/ay-lab/fithic) for significant contacts) and for data visualization with the [WashU Epigenome Browser](https://epigenomegateway.wustl.edu).
 
 Descriptions of usage of the utilities
 
