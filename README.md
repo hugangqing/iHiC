@@ -63,7 +63,7 @@ Descriptions of usage of the utilities
   <em>Bin_size</em>: Size of genomic bin.<br>
   <em>Chr_lenth_file</em>: In a two column format: chr and length<br>
   <em>Output_Prefix</em>: "chr#.mtx4topdom" will be appended to the Output_Prefix to denote the file for chr#.<br>
-  <b>Outputs</b>:In the format of n X (n+3) matrix format with first three columns for bin.chr, bin.start, and bin.end, and the next n columns for # of PETs linked to other bins.<br>
+  <b>Outputs</b>: In the format of n X (n+3) matrix format, accepted by TopDom as [https://github.com/HenrikBengtsson/TopDom/blob/0.0.2/docs/TopDom%20Manual_v0.0.2.pdf input file], with first three columns for bin.chr, bin.start, and bin.end, and the next n columns for # of PETs linked to other bins.<br>
   
 9. <b>iHiC_TADBoundary_TopDom</b>: Extract TAD boundaries from TopDom predictions.<br>
   <b>Inputs</b>:<br>
