@@ -9,7 +9,7 @@ Descriptions of the utilities
 2. iHiC_PETOrientations_Stat: Calculate % of PETs in different combinations of orientations as a function of genomic distance.
 3. iHiC_ContactFreq_Distance: Calculate contact probability as a function genomic distance.
 4. <b>iHiC_BEDPE2III</b>: Generate an intra-chromosomal interaction index (III) file for the number of PETs of interacting genomic bins from the same chromosomes.<br>
-Usage: iHiC_BEDPE2III BEDPE_file Bin_size Minimal_Distance Maximal_Distance MAPQ Output_file<br>
+<b>Usage</b>: iHiC_BEDPE2III BEDPE_file Bin_size Minimal_Distance Maximal_Distance MAPQ Output_file<br>
 <b>Inputs</b>:<br>
   <em>BEDPE_file</em>: a simplified version of regular BEDPE file: only retain columns for “chrom1”, “start1”, “end1”, “chrom2”, “start2”, “end2”, “score”, “strand1”, and “strand 2”.<br>
   <em>Bin_size</em>: used to partition the genome into bins of equal size.<br>
@@ -19,7 +19,7 @@ Usage: iHiC_BEDPE2III BEDPE_file Bin_size Minimal_Distance Maximal_Distance MAPQ
   <em>Output_file</em>: file name to save the III file.<br>
 <b>Output file</b>:<br>
   Format for left to right columns: chromosome, genomic position of bin1, genomic position of bin2, number of PETs linking the two bins.<br>
-  Note: only uniquely mapped PETs are considered. For multiple PETs mapped to the same position, only one copy is retained.<br>
+  <b>Note</b>: only uniquely mapped PETs are considered. For multiple PETs mapped to the same position, only one copy is retained.<br>
 
 5. iHiC_III2WashU: Convert an III file into “longrange” format (http://wiki.wubrowse.org/Long-range) accepted by the WashU browser.
 6. iHiC_BEDPE2HiCSummary: Convert a BEDPE file into “HiCsummary” format (http://homer.ucsd.edu/homer/interactions/HiCtagDirectory.html) accepted by CscoreTool.
