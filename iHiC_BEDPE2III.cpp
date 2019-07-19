@@ -43,8 +43,8 @@ int main(int argc, char* args[]) {
 				}
 			}
 		}
-		in.close();
 	}
+	in.close();
 
 	ofstream out(args[6]);
 	for( map<Str,map<pair<int,int>, int > >::iterator chrIt = _chr_bin1bin2_n.begin(); chrIt != _chr_bin1bin2_n.end(); ++chrIt ){
