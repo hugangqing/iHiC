@@ -10,13 +10,13 @@ Descriptions of usage of the utilities
   <em>MAPQ</em>: Minimal mapping quality score used to filter out PETs mapped to multiple positions. 10 recommended.<br>
   <b>Outputs</b>: screen<br>
 
-2. iHiC_PETOrientations_Stat: Calculate % of PETs in different combinations of orientations as a function of genomic distance.<br>
+2. <b>iHiC_PETOrientations_Stat</b>: Calculate % of PETs in different combinations of orientations as a function of genomic distance.<br>
   <b>Usage</b>: iHiC_PETOrientations_Stat BEDPE_file MAPQ <br>
   <em>BEDPE_file</em>: A simplified version of regular BEDPE file: only columns for “chrom1”, “start1”, “end1”, “chrom2”, “start2”, “end2”, “score”, “strand1”, and “strand 2” are retained.<br>
   <em>MAPQ</em>: Minimal mapping quality score used to filter out PETs mapped to multiple positions. 10 recommended.<br>
   <b>Outputs</b>: screen<br>
 
-3. iHiC_ContactFreq_Distance: Calculate contact probability as a function genomic distance.<br>
+3. <b>iHiC_ContactFreq_Distance</b>: Calculate contact probability as a function genomic distance.<br>
   <b>Usage</b>: iHiC_ContactFreq_Distance BEDPE_file MAPQ<br>
   <em>BEDPE_file</em>: A simplified version of regular BEDPE file: only columns for “chrom1”, “start1”, “end1”, “chrom2”, “start2”, “end2”, “score”, “strand1”, and “strand 2” are retained.<br>
   <em>MAPQ</em>: Minimal mapping quality score used to filter out PETs mapped to multiple positions. 10 recommended.<br>
@@ -35,13 +35,13 @@ Descriptions of usage of the utilities
 <b>Outputs</b>: Format for left to right columns: chromosome, genomic position of bin1, genomic position of bin2, number of PETs linking the two bins.<br>
   <b>Note</b>: Only uniquely mapped PETs are considered. For multiple PETs mapped to the same position, only one copy is retained.<br>
 
-5. iHiC_III2WashU: Convert an III file into “longrange” format (http://wiki.wubrowse.org/Long-range) accepted by the WashU browser.<br>
+5. <b>iHiC_III2WashU</b>: Convert an III file into “longrange” format (http://wiki.wubrowse.org/Long-range) accepted by the WashU browser.<br>
   <b>Usage</b>: iHiC_III2WashU III_file Bin_size Output_file_name<br>
   <b>Inputs</b>:<br>
   <em>III_file</em>: An intra-chromosomal interaction index (III) file that records the numbers of PETs for interacting genomic bins from the same chromosomes. Output from iHiC_BEDPE2III.<br>
   <em>Bin_size</em>: Size of genomic bin.<br>
   <b>Outputs</b>: A "longrange" format by WashU Epigenome Browser (http://wiki.wubrowse.org/Long-range).<br>
-6. iHiC_BEDPE2HiCSummary: Convert a BEDPE file into “HiCsummary” format (http://homer.ucsd.edu/homer/interactions/HiCtagDirectory.html) accepted by CscoreTool.<br>
+6. <b>iHiC_BEDPE2HiCSummary</b>: Convert a BEDPE file into “HiCsummary” format (http://homer.ucsd.edu/homer/interactions/HiCtagDirectory.html) accepted by CscoreTool.<br>
   <b>Inputs</b>:<br>
   <em></em><br>
   <em></em><br>
