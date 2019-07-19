@@ -49,10 +49,11 @@ Descriptions of usage of the utilities
   <em>Output_file_name</em>: File name for the "HiCsummary" file.<br>
   <b>Outputs</b>:In "HiCsummary" format (http://homer.ucsd.edu/homer/interactions/HiCtagDirectory.html)<br>
 
-7. iHiC_Cscore_Adj: Flip the sign of C-score chromosome-by- chromosome to ensure genomic regions with positive scores correspond to A compartment status.<br>
+7. <b>iHiC_Cscore_Adj</b>: Flip the sign of C-score chromosome-by- chromosome to ensure genomic regions with positive scores correspond to A compartment status.<br>
+  <b>Usage</b>: iHiC_Cscore_Adj Cscore_file CpG_annotation_file<br>
   <b>Inputs</b>:<br>
-  <em></em><br>
-  <em></em><br>
+  <em>Cscore_file</em>: output file from Cscore_Tool with name ending with '_cscore.bedgraph'<br>
+  <em>CpG_annotation_file</em>: CpG annotation downloaded from UCSC<br>
   <em></em><br>
   <b>Outputs</b>:<br>
   <b>Note</b>:<br>
