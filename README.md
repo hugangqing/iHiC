@@ -14,13 +14,12 @@ Descriptions of the utilities
   <em>BEDPE_file</em>: a simplified version of regular BEDPE file: only columns for “chrom1”, “start1”, “end1”, “chrom2”, “start2”, “end2”, “score”, “strand1”, and “strand 2” are retained.<br>
   <em>MAPQ</em>: minimal mapping quality score used to filter out PETs mapped to multiple positions. 10 recommended.<br>
   <b>Outputs</b>: screen<br>
-3. iHiC_ContactFreq_Distance: Calculate contact probability as a function genomic distance.
-  <b>Inputs</b>:<br>
-  <em></em><br>
-  <em></em><br>
-  <em></em><br>
-  <b>Outputs</b>:<br>
-  <b>Note</b>:<br>
+3. iHiC_ContactFreq_Distance: Calculate contact probability as a function genomic distance.<br>
+  <b>Usage</b>: iHiC_ContactFreq_Distance BEDPE_file MAPQ<br>
+  <em>BEDPE_file</em>: a simplified version of regular BEDPE file: only columns for “chrom1”, “start1”, “end1”, “chrom2”, “start2”, “end2”, “score”, “strand1”, and “strand 2” are retained.<br>
+  <em>MAPQ</em>: minimal mapping quality score used to filter out PETs mapped to multiple positions. 10 recommended.<br>
+  <b>Outputs</b>: screen<br>
+  <b>Note</b>:It is recommended to redirect the ouputs into a local file with the ">" symbol: iHiC_ContactFreq_Distance BEDPE_file MAPQ > local_file_name <br>
 4. <b>iHiC_BEDPE2III</b>: Generate an intra-chromosomal interaction index (III) file that records the numbers of PETs for interacting genomic bins from the same chromosomes.<br>
 <b>Usage</b>: iHiC_BEDPE2III BEDPE_file Bin_size Minimal_Distance Maximal_Distance MAPQ Output_file<br>
 <b>Inputs</b>:<br>
