@@ -27,7 +27,7 @@ Descriptions of the utilities
 4. <b>iHiC_BEDPE2III</b>: Generate an intra-chromosomal interaction index (III) file that records the numbers of PETs for interacting genomic bins from the same chromosomes.<br>
 <b>Usage</b>: iHiC_BEDPE2III BEDPE_file Bin_size Minimal_Distance Maximal_Distance MAPQ Output_file<br>
 <b>Inputs</b>:<br>
-  <em>BEDPE_file</em>: a simplified version of regular BEDPE file: only retain columns for “chrom1”, “start1”, “end1”, “chrom2”, “start2”, “end2”, “score”, “strand1”, and “strand 2”.<br>
+  <em>BEDPE_file</em>: a simplified version of regular BEDPE file: only columns for “chrom1”, “start1”, “end1”, “chrom2”, “start2”, “end2”, “score”, “strand1”, and “strand 2” are retained.<br>
   <em>Bin_size</em>: used to partition the genome into bins of equal size.<br>
   <em>Minimal_Distance</em>: minimal distance between two PET ends considered for downstream analysis. Should be no less than Bin_size.<br>
   <em>Maximal_Distance</em>: maximal distance between two PET ends considered for downstream analysis. Simply set to 2000,0000,000 bps to include all interacting PETs longer than the Minimal_Distance. However, considering that majority of the significant contacts are less than 2,000,000 bps, one may want to set Maximal_Distance to this number to save computational time for later analysis.<br>
