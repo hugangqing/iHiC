@@ -33,12 +33,11 @@ Descriptions of usage of the utilities
   Format for left to right columns: chromosome, genomic position of bin1, genomic position of bin2, number of PETs linking the two bins.<br>
   <b>Note</b>: only uniquely mapped PETs are considered. For multiple PETs mapped to the same position, only one copy is retained.<br>
 5. iHiC_III2WashU: Convert an III file into “longrange” format (http://wiki.wubrowse.org/Long-range) accepted by the WashU browser.<br>
+  <b>Usage</b>: iHiC_III2WashU III_file Bin_size Output<br>
   <b>Inputs</b>:<br>
-  <em></em><br>
-  <em></em><br>
-  <em></em><br>
-  <b>Outputs</b>:<br>
-  <b>Note</b>:<br>
+  <em>III_file</em>: an intra-chromosomal interaction index (III) file that records the numbers of PETs for interacting genomic bins from the same chromosomes. Output from iHiC_BEDPE2III.<br>
+  <em>Bin_size</em>: size of genomic bin.<br>
+  <b>Outputs</b>:"longrange" format by WashU Epigenome Browser (http://wiki.wubrowse.org/Long-range).<br>
 6. iHiC_BEDPE2HiCSummary: Convert a BEDPE file into “HiCsummary” format (http://homer.ucsd.edu/homer/interactions/HiCtagDirectory.html) accepted by CscoreTool.<br>
   <b>Inputs</b>:<br>
   <em></em><br>
