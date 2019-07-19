@@ -3,7 +3,9 @@ using namespace std;
 
 int main(int argc, char* args[]) {
 	if( argc != 4 ){
-		cout<<"Usage: iHiC_FitHiC2WashU FitHiC_.significances.txt Bin_size q-value\n";
+		cout<<"Usage: iHiC_FitHiC2WashU FitHiC_prediction Bin_size Q-value\n";
+		cout<<"FitHiC_prediction: Output file Fit-Hi-C with name ending with '.significances.txt'\n";
+		cout<<"Bin_size: Bin size used for generating inputs for Fit-Hi-C by '\n";
 		exit(1);
 	}
 
