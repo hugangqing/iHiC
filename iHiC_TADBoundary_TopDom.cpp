@@ -22,8 +22,6 @@ int main(int argc, char* args[]) {
 				double p = 1;
 				in>>b.chrom>>b.chrom>>b.start>>b.end>>tag>>line>>p;
 				strip(b.chrom,'\"');
-//				if( tag == "-0.5" )
-//					gaps[b.chrom].insert(b);
 				if( p < pthreshold ){
 					bdrs[b.chrom].insert(b);
 					if( tag == "-1" ){
