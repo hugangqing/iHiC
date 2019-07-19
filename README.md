@@ -35,7 +35,7 @@ Descriptions of usage of the utilities
 <b>Outputs</b>: Format for left to right columns: chromosome, genomic position of bin1, genomic position of bin2, number of PETs linking the two bins.<br>
   <b>Note</b>: Only uniquely mapped PETs are considered. For multiple PETs mapped to the same position, only one copy is retained.<br>
 
-5. <b>iHiC_III2WashU</b>: Convert an III file into “longrange” format (http://wiki.wubrowse.org/Long-range) accepted by the WashU browser.<br>
+5. <b>iHiC_III2WashU</b>: Convert an III file into [“longrange”](http://wiki.wubrowse.org/Long-range) format accepted by the WashU browser.<br>
   <b>Usage</b>: iHiC_III2WashU III_file Bin_size Output_file_name<br>
   <b>Inputs</b>:<br>
   <em>III_file</em>: An intra-chromosomal interaction index (III) file that records the numbers of PETs for interacting genomic bins from the same chromosomes. Output from iHiC_BEDPE2III.<br>
