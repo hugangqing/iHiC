@@ -3,7 +3,9 @@ using namespace std;
 
 int main(int argc, char* args[]) {
 	if( argc != 4 ){
-		cout<<"Usage: iHiC_TADBoundary_TopDom TopDomBinSignalFile pvalue OutputFile\n";
+		cout<<"Usage: iHiC_TADBoundary_TopDom TopDomBinSignalFile Qvalue_threshold OutputFile\n";
+		cout<<"TopDomBinSignalFile: Output file from TopDom with name ending with '.binSignal'\n";
+		cout<<"Qvalue_threshold: qvalue used to filter bins corresponding to TAD boundaries\n";
 		return 0;
 	}
 
