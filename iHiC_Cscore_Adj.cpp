@@ -5,6 +5,7 @@ int main(int argc, char* args[]) {
 	if( argc != 3 ){
 		cout<<"Usage: iHiC_Cscore_Adj Cscore_file CpG_annotation_file\n";
 		cout<<"Cscore_file: output file from Cscore_Tool with name ending with '_cscore.bedgraph'\n";
+		cout<<"CpG_annotation_file: CpG annotation downloaded from UCSC\n";
 		exit(1);
 	}
 
