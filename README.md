@@ -53,9 +53,8 @@ Descriptions of usage of the utilities
   <b>Usage</b>: iHiC_Cscore_Adj Cscore_file CpG_annotation_file<br>
   <b>Inputs</b>:<br>
   <em>Cscore_file</em>: output file from Cscore_Tool with name ending with '_cscore.bedgraph'<br>
-  <em>CpG_annotation_file</em>: CpG annotation downloaded from UCSC<br>
-  <em></em><br>
-  <b>Outputs</b>:<br>
+  <em>CpG_annotation_file</em>: CpG annotation downloaded from UCSC. Only the 4-5 columns corresponding to chr, start and end are used by the program. <br>
+  <b>Outputs</b>: A "bedgraph" format with file name ending with "adj"<br>
   <b>Note</b>:<br>
 8. iHiC_III2MTX4TopDom: Convert an III file into interaction matrices accepted by TopDom.<br>
   <b>Inputs</b>:<br>
