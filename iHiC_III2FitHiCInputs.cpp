@@ -3,7 +3,7 @@ using namespace std;
 
 int main(int argc, char* args[]) {
 	if( argc != 7 ){
-		cout<<"Usage: iHiC_III2FitHiCInputs III output_prefix Chr_Length_File Bin_size Minimal_Distance Maximal_Distance\n";
+		cout<<"Usage: iHiC_III2FitHiCInputs III Output_prefix Chr_length_file Bin_size Minimal_Distance Maximal_Distance\n";
 		exit(1);
 	}
 	int bin = atoi(args[4]);
