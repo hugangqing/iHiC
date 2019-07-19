@@ -40,14 +40,14 @@ Descriptions of usage of the utilities
   <b>Inputs</b>:<br>
   <em>III_file</em>: An intra-chromosomal interaction index (III) file that records the numbers of PETs for interacting genomic bins from the same chromosomes. Output from iHiC_BEDPE2III.<br>
   <em>Bin_size</em>: Size of genomic bin.<br>
+  <em>Output_file_name</em>: File name for the "longrange" file.<br>
   <b>Outputs</b>: A "longrange" format by WashU Epigenome Browser (http://wiki.wubrowse.org/Long-range).<br>
 6. <b>iHiC_BEDPE2HiCSummary</b>: Convert a BEDPE file into “HiCsummary” format (http://homer.ucsd.edu/homer/interactions/HiCtagDirectory.html) accepted by CscoreTool.<br>
+  <b>Usage</b>:iHiC_BEDPE2HiCSummary BEDPE Output_file_name<br>
   <b>Inputs</b>:<br>
-  <em></em><br>
-  <em></em><br>
-  <em></em><br>
-  <b>Outputs</b>:<br>
-  <b>Note</b>:<br>
+  <em>BEDPE_file</em>: A simplified version of regular BEDPE file: only columns for “chrom1”, “start1”, “end1”, “chrom2”, “start2”, “end2”, “score”, “strand1”, and “strand 2” are retained.<br>
+  <em>Output_file_name</em>: File name for the "HiCsummary" file.<br>
+  <b>Outputs</b>:In "HiCsummary" format (http://homer.ucsd.edu/homer/interactions/HiCtagDirectory.html)<br>
 
 7. iHiC_Cscore_Adj: Flip the sign of C-score chromosome-by- chromosome to ensure genomic regions with positive scores correspond to A compartment status.<br>
   <b>Inputs</b>:<br>
