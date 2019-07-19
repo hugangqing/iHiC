@@ -55,29 +55,32 @@ Descriptions of usage of the utilities
   <em>Cscore_file</em>: output file from Cscore_Tool with name ending with '_cscore.bedgraph'<br>
   <em>CpG_annotation_file</em>: CpG annotation downloaded from UCSC. Only the 4-5 columns corresponding to chr, start and end are used by the program. <br>
   <b>Outputs</b>: A "bedgraph" format with file name ending with "adj"<br>
-  <b>Note</b>:<br>
-8. iHiC_III2MTX4TopDom: Convert an III file into interaction matrices accepted by TopDom.<br>
+
+8. <b>iHiC_III2MTX4TopDom</b>: Convert an III file into interaction matrices accepted by TopDom.<br>
   <b>Inputs</b>:<br>
   <em></em><br>
   <em></em><br>
   <em></em><br>
   <b>Outputs</b>:<br>
   <b>Note</b>:<br>
-9. iHiC_TADBoundary_TopDom: Extract TAD boundaries from TopDom predictions.<br>
+  
+9. <b>iHiC_TADBoundary_TopDom</b>: Extract TAD boundaries from TopDom predictions.<br>
   <b>Inputs</b>:<br>
   <em></em><br>
   <em></em><br>
   <em></em><br>
   <b>Outputs</b>:<br>
   <b>Note</b>:<br>
-10. iHiC_III2FitHiCInputs: Convert an III file into interaction matrices accepted by Fit-Hi-C.<br>
+  
+10. <b>iHiC_III2FitHiCInputs</b>: Convert an III file into interaction matrices accepted by Fit-Hi-C.<br>
   <b>Inputs</b>:<br>
   <em></em><br>
   <em></em><br>
   <em></em><br>
   <b>Outputs</b>:<br>
   <b>Note</b>:<br>
-11. iHiC_FitHiC2WashU: Convert the significant contacts predicted by Fit-Hi-C into a “longrange” format accepted by the WashU browser.<br>
+  
+11. <b>iHiC_FitHiC2WashU</b>: Convert the significant contacts predicted by Fit-Hi-C into a “longrange” format accepted by the WashU browser.<br>
   <b>Inputs</b>:<br>
   <em></em><br>
   <em></em><br>
