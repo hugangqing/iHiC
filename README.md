@@ -4,6 +4,7 @@ A set of C++ utilities for pre/post-processing Hi-C data for public software and
 Descriptions of the utilities
 
 1. <b>iHiC_BEDPE_Statistics</b>: Calculate statistics of PET alignments from a simplified BEDPE file.<br>
+  <b>Usage</b>:iHiC_BEDPE_Statistics BEDPE_file MAPQ<br>
   <b>Inputs</b>:<br>
   <em>BEDPE_file</em>: a simplified version of regular BEDPE file: only columns for “chrom1”, “start1”, “end1”, “chrom2”, “start2”, “end2”, “score”, “strand1”, and “strand 2” are retained.<br>
   <em>MAPQ</em>: minimal mapping quality score used to filter out PETs mapped to multiple positions. 10 recommended.<br>
