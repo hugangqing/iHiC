@@ -57,12 +57,13 @@ Descriptions of usage of the utilities
   <b>Outputs</b>: A "bedgraph" format with file name ending with "adj"<br>
 
 8. <b>iHiC_III2MTX4TopDom</b>: Convert an III file into interaction matrices accepted by TopDom.<br>
+  <b>Usage</b>:iHiC_III2MTX4TopDom III_file Bin_size Chr_lenth_file Output_Prefix<br>
   <b>Inputs</b>:<br>
-  <em></em><br>
-  <em></em><br>
-  <em></em><br>
-  <b>Outputs</b>:<br>
-  <b>Note</b>:<br>
+  <em>III_file</em>: An intra-chromosomal interaction index (III) file that records the numbers of PETs for interacting genomic bins from the same chromosomes. Output from iHiC_BEDPE2III.<br>
+  <em>Bin_size</em>: Size of genomic bin.<br>
+  <em>Chr_lenth_file</em>: In a two column format: chr and length<br>
+  <em>Output_Prefix</em>: "chr#.mtx4topdom" will be appended to the Output_Prefix to denote the file for chr#.<br>
+  <b>Outputs</b>:In the format of n X (n+3) matrix format with first three columns for bin.chr, bin.start, and bin.end, and the next n columns for # of PETs linked to other bins.<br>
   
 9. <b>iHiC_TADBoundary_TopDom</b>: Extract TAD boundaries from TopDom predictions.<br>
   <b>Inputs</b>:<br>
