@@ -1,3 +1,5 @@
+#./iHiC_install
+
 g++ iHiC_base.cpp -c
 g++ iHiC_rgn.cpp -c
 
@@ -24,4 +26,3 @@ g++ iHiC_rgn.o iHiC_III2TopDomInputs.o iHiC_base.o -O2 -o bin/iHiC_III2TopDomInp
 g++ iHiC_rgn.o iHiC_PETOrientations_Stat.o iHiC_base.o -O2 -o bin/iHiC_PETOrientations_Stat
 g++ iHiC_rgn.o iHiC_TADBoundary_TopDom.o iHiC_base.o -O2 -o bin/iHiC_TADBoundary_TopDom
 g++ iHiC_rgn.o iHiC_III2WashU.o iHiC_base.o -O2 -o bin/iHiC_III2WashU
-
