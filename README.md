@@ -1,5 +1,5 @@
 # iHiC
-A set of C++ utilities for pre/post-processing Hi-C data for public software (including [CscoreTool](https://github.com/scoutzxb/CscoreTool) for A/B compartment, [TopDom](https://github.com/HenrikBengtsson/TopDom) for TAD, and [Fit-Hi-C](https://github.com/ay-lab/fithic) for significant contacts), for data visualization with the [WashU Epigenome Browser](https://epigenomegateway.wustl.edu) and for quality inspection.
+A set of C++ utilities for pre/post-processing Hi-C data for public software (including [CscoreTool](https://github.com/scoutzxb/CscoreTool) for A/B compartment, [TopDom](https://github.com/HenrikBengtsson/TopDom) for TAD, and [Fit-Hi-C](https://github.com/ay-lab/fithic) for significant contacts), for data visualization with the [WashU Epigenome Browser](https://epigenomegateway.wustl.edu), and for quality inspection.
 
 <b>Installation</b><br>
 After download the package, locate the folder using terminal command, and type in: "sh iHiC_install" to compile the C++ codes with g++. Executive files will be save to the bin sub_folder. Add the bin folder to your path or copy the executive files to /usr/bin/ or /usr/local/bin.
