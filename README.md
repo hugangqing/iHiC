@@ -96,4 +96,5 @@ Descriptions of usage of the utilities
   <b>Outputs</b>: Output file will be ending with ["longrange"](http://wiki.wubrowse.org/Long-range) accepted by [WashU Epigenome Browser](https://epigenomegateway.wustl.edu) for data visualization. <br>
 
 12. <b>TopDom_wrapper.R</b>: A Rscript wrapper to runn TopDom.<br>
-  <b>Usage</b>: Rscript TopDom_wrapper.R Path_to_TopDom_v0.0.2.R "chr#.mtx4topdom"\_output_from_"iHiC_III2MTX4TopDom"<br> 
+  <b>Usage</b>: Rscript TopDom_wrapper.R Path_to_TopDom_v0.0.2.R ".mtx4topdom"\_file.<br>
+  The file ".mtx4topdom" are outputs from "iHiC_III2MTX4TopDom".<br> 
