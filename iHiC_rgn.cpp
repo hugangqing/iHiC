@@ -30,54 +30,6 @@ map<Str, set<BED3> > self_union( map<Str, set<BED3> > beds ){
 	return unions;
 }
 
-/*
-map<Str, set<BED3> > get_complement_set(map<Str, set<BED3> > bed, Str file ){
-	map<Str, set<BED3> > pro = self_union(bed);
-	map<Str, int> chr_len = getChrlen(file);
-	map<Str, set<BED3> > nonpro;
-	for( map<Str, set<BED3> >::iterator chrIt = bed.begin(); chrIt != bed.end(); ++chrIt ){
-		set<BED3>::iterator bIt1 = chrIt->second.begin();
-		set<BED3>::iterator bIt2 = bIt1;
-		int lftmst = bIt1->strand == "+" ? bIt1->start - PROMOTERUPLEN: bIt1->start;
-		if( lftmst > 0 ){
-			BED3 b;
-			b.start = 1;
-			b.end = lftmst;
-			b.chrom = bIt1->chrom;
-			if( b.end - b.start > 3)
-				nonpro[b.chrom].insert(b);
-		}
-		for( ++bIt2; bIt2 != chrIt->second.end(); ++bIt1, ++bIt2 ){
-			if( bIt2->start > bIt1->end ){
-				BED3 b;
-				b.start = bIt1->end;
-				b.end = bIt2->start;
-				b.chrom = bIt1->chrom;
-				if( b.end - b.start > 3)
-					nonpro[b.chrom].insert(b);
-			}else{
-				cout<<bIt1->chrom<<'\t'<<bIt1->end<<'\t'<<bIt2->start<<endl;
-			}
-		}
-		map<Str, int>::iterator lIt = chr_len.find(chrIt->first);
-		if( lIt != chr_len.end() ){
-			--bIt2;
-			int rgtmst = bIt2->strand == "+" ? bIt2->end: bIt2->end + PROMOTERUPLEN;
-			if( rgtmst < lIt->second){
-				BED3 b;
-				b.start = rgtmst;
-				b.end = lIt->second;
-				b.chrom = bIt2->chrom;
-				if( b.end - b.start > 3)
-					nonpro[b.chrom].insert(b);
-			}
-		}else{
-		//	cout<<chrIt->first<<"ERR 22"<<endl;
-		}
-	}
-	return nonpro;
-}//*/
-
 map<Str, set<BED3> > merge(map<Str, set<BED3> > bed1, map<Str, set<BED3> > bed2){
 	for( map<Str, set<BED3> >::iterator chrIt = bed1.begin(); chrIt != bed1.end(); ++chrIt ){
 		for( set<BED3>::iterator bIt = chrIt->second.begin(); bIt != chrIt->second.end(); ++bIt ){
@@ -124,9 +76,6 @@ void assignIsland2Island(map<Str, set<BED3> >& target_island,
 		if( !source_islands[chrIt->first].empty() ){
 			vector<BED3>::const_iterator sIt = source_islands[chrIt->first].begin();
 			for( vector<BED3>::iterator tIt = chrIt->second.begin(); tIt != chrIt->second.end(); ++tIt ){
-//				if( tIt->start > 123962000 && tIt->end < 123993820 && tIt->chrom == "chr9" ){
-//					cout<<tIt->start<<'\t'<<tIt->end<<endl;
-//				}
 				while( (sIt->end > tIt->start && sIt != source_islands[chrIt->first].begin())
 						|| sIt == source_islands[chrIt->first].end() ){
 					--sIt;
