@@ -3,7 +3,7 @@ using namespace std;
 
 int main(int argc, char* args[]) {
 	if( argc != 7 ){
-		cout<<"Usage: iHiC_BEDPE2III BEDPE_file Bin_size Minimal_Distance Maximal_Distance MAPQ Output_file\n";
+		cout<<"Usage: iHiC_BEDPE2III BEDPE_file Bin_size Minimal_Distance Maximal_Distance MAPQ Output_file_name\n";
 		cout<<"Only uniquely mapped intra-chromosomal PETs, after removing redundancy, are considered.\n";
 		exit(1);
 	}
