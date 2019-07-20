@@ -94,3 +94,6 @@ Descriptions of usage of the utilities
   <em>Bin_szie</em>: Bin size used for generating inputs for Fit-Hi-C by iHiC_III2FitHiCInputs<br>
   <em>Q-value</em>: Q-value to retain significant contacts.<br>
   <b>Outputs</b>: Output file will be ending with ["longrange"](http://wiki.wubrowse.org/Long-range) accepted by [WashU Epigenome Browser](https://epigenomegateway.wustl.edu) for data visualization. <br>
+
+12. <b>TopDom_wrapper.R</b>: A Rscript wrapper to runn TopDom
+  <b>Usage</b>: Rscript TopDom_wrapper.R Path_for_TopDom_v0.0.2.R "chr#.mtx4topdom"_output_from_"iHiC_III2MTX4TopDom"<br> 
