@@ -55,7 +55,7 @@ Descriptions of usage of the utilities
 7. <b>iHiC_Cscore_Adj</b>: Flip the sign of C-score chromosome-by- chromosome to ensure genomic regions with positive scores correspond to A compartment status.<br>
   <b>Usage</b>: iHiC_Cscore_Adj Cscore_file CpG_annotation_file<br>
   <b>Inputs</b>:<br>
-  <em>Cscore_file</em>: output file from Cscore_Tool with name ending with '_cscore.bedgraph'<br>
+  <em>Cscore_file</em>: output file from Cscore_Tool with name ending with '\_cscore.bedgraph'<br>
   <em>CpG_annotation_file</em>: CpG annotation downloaded from UCSC. Only the 4-5 columns corresponding to chr, start and end are used by the program. <br>
   <b>Outputs</b>: A "bedgraph" format with file name ending with "adj"<br>
 
