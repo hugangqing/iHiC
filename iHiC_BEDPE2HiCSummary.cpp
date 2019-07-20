@@ -3,7 +3,7 @@ using namespace std;
 
 int main(int argc, char* args[]) {
 	if( argc != 3 ){
-		cout<<"Usage: iHiC_BEDPE2HiCSummary BEDPE_file Output_file\n";
+		cout<<"Usage: iHiC_BEDPE2HiCSummary BEDPE_file Output_file_name\n";
 		exit(1);
 	}
 	int index = 1;
