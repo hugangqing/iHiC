@@ -1,4 +1,6 @@
-#./iHiC_install
+# sh iHiC_install
+echo Executive c++ files will be installed to the bin folder.
+mkdir bin
 
 g++ iHiC_base.cpp -c
 g++ iHiC_rgn.cpp -c
