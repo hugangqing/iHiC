@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(int argc, char* args[]) {
-	if( argc != 6 ){
+	if( argc != 4 ){
 		cout<<"Usage: iHiC_III2WashU III_file Bin_size Output_file_name\n";
 		cout<<"Convert the numbers of PETs connecting two intra-chromosomal bins into the \"Long Range\" format acceptable to WashU Epigenome Browser for visualization\n";
 		cout<<"The number of interacting PETs are normalized by library size and bin size\n";
