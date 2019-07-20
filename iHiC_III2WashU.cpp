@@ -3,7 +3,7 @@ using namespace std;
 
 int main(int argc, char* args[]) {
 	if( argc != 6 ){
-		cout<<"Usage: iHiC_III2WashU III_file Bin_size Output\n";
+		cout<<"Usage: iHiC_III2WashU III_file Bin_size Output_file_name\n";
 		cout<<"Convert the numbers of PETs connecting two intra-chromosomal bins into the \"Long Range\" format acceptable to WashU Epigenome Browser for visualization\n";
 		cout<<"The number of interacting PETs are normalized by library size and bin size\n";
 		cout<<"III_file: the intra-chromosomal interaction index file output by MiMB_HiC_BEDPE2III\n";
